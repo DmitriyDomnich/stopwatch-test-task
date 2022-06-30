@@ -1,1 +1,17 @@
-<h1 class="text-3xl font-bold underline">Stopwatch task</h1>
+<div class="h-screen flex flex-col justify-center items-center">
+  <div #div class="mb-3 text-5xl font-mono">
+    {{ (stopWatch$ | async)! | time }}
+  </div>
+  <div class="flex w-1/2 justify-center">
+    <button #start (click)="stopwatchService.start()" class="btn-primary mx-2">
+      Start
+    </button>
+    <button #stop (click)="stopwatchService.stop()" class="btn-primary mx-2">
+      Stop
+    </button>
+    <button #wait class="btn-primary mx-2">Wait</button>
+    <button #reset (click)="stopwatchService.reset()" class="btn-primary mx-2">
+      Reset
+    </button>
+  </div>
+</div>

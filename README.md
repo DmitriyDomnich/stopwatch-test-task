@@ -1,3 +1,3 @@
-# StopwatchTestTask
+# Stopwatch Test Task
 
 Stopwatch app
